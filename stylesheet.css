@@ -12,7 +12,8 @@ body {
 	display: none;
 }
 .peach {
-	background-color: #FFDAB9;
+	background: #2A7B9B;
+	background: linear-gradient(90deg, rgba(42, 123, 155, 1) 0%, rgba(87, 199, 133, 1) 50%, rgba(237, 221, 83, 1) 100%);
 	
 }
 .peach-after {
@@ -1114,6 +1115,15 @@ audio {
 #b7,#b77{
 	background-image: url('b7.png');
 }
+
+#b8,#b88{
+	background-image: url('b2.png');
+}
+
+#b9,#b99{
+	background-image: url('matcha.png');
+}
+
 .balloons-rotate-behaviour-one {
 	-webkit-animation: balloons_rotate_one linear 10s infinite;
 	-webkit-transform: rotate(30deg);
@@ -1249,11 +1259,21 @@ audio {
 	}
 }
 
+
+
 .balloon-border{
 	position: fixed;
 	top:100%;
 	opacity: 0.5;
 	z-index: 9999;
+}
+
+.matcha-border{
+	position: fixed;
+	top:100%;
+	opacity: 0.2;
+	z-index: 9999;
+	
 }
 .control-panel {
 	position: fixed;
@@ -1299,6 +1319,19 @@ audio {
         color: #fff;
         background-color: #466baf;
     }
+
+/* RESPONSIVE BALLOONS SIZE */
+@media (max-width: 600px) {
+    .balloons {
+        width: 20vw !important;
+        height: 26vw !important;
+    }
+
+    .balloons h2 {
+        font-size: 10vw !important;
+    }
+}
+
 
 
 
