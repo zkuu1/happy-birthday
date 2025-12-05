@@ -12,10 +12,22 @@ body {
 	display: none;
 }
 .peach {
-	background: #2A7B9B;
-	background: linear-gradient(90deg, rgba(42, 123, 155, 1) 0%, rgba(87, 199, 133, 1) 50%, rgba(237, 221, 83, 1) 100%);
-	
+  background-image: url(background.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+  /* This is what makes the background image rescale based
+     on the container's size */
+  background-size: cover;
+
+  /* Set a background color that will be displayed
+     while the background image is loading */
+  background-color: #FEC0CD;
+  height: 100%;
 }
+
+
 .peach-after {
 	-webkit-animation:peach_alive linear 8s infinite;
 	-moz-animation:peach_alive linear 8s infinite;
@@ -1319,18 +1331,6 @@ audio {
         color: #fff;
         background-color: #466baf;
     }
-
-/* RESPONSIVE BALLOONS SIZE */
-@media (max-width: 600px) {
-    .balloons {
-        width: 20vw !important;
-        height: 26vw !important;
-    }
-
-    .balloons h2 {
-        font-size: 10vw !important;
-    }
-}
 
 
 
